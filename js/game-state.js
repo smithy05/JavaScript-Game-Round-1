@@ -1,10 +1,20 @@
 let game = {
     score: 0,
     isRunning: false,
-    player: {},
-    enemy: {},
-    board: null
-};
+    player: {r:0,c:0,colorIndex:1},
+    enemy: {r:5,c:5,colorIndex:2},
+    board: [
+        [4,1,1,1,1,1],
+        [1,1,3,3,1,1],
+        [1,0,1,1,0,1],
+        [2,0,2,2,0,2],
+        [2,2,3,3,2,2],
+        [2,2,2,2,2,0]
+
+    ]
+
+}
+
 
 // setup the board
 const __ = 0;
